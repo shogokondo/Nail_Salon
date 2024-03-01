@@ -1,0 +1,240 @@
+.bar{
+    position: relative;
+}
+.icon{
+    /* アイコンの配置 */
+    width: 300px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translate(0,-50%);
+    /* アイコンのフォントデザイン */
+    font-size: 36px;
+    text-decoration: underline;
+}
+nav{
+    height: 110px;
+    display: flex;
+    /* 子要素のための指定 */
+    justify-content: space-around;
+    padding-left: 50%;
+    padding-right: 10%;
+    text-decoration: underline;
+}
+nav > a{
+    /* ナビゲーションを上下中央揃え */
+    display: flex;
+    align-items: center;
+    /* ナビゲーションのフォントサイズ指定 */
+    font-size: 20px;
+}
+main{
+    /* firstView画像の両横余白 */
+    padding: 0 10vw;
+    /* 子要素のための指定 */
+    position: relative;
+}
+main > span{
+    /* 要素の配置と向きの指定 */
+    position: absolute;
+    bottom: 10%;
+    left: 3vw;
+    writing-mode: vertical-rl;
+    transform:rotate(180deg);
+    /* フォントデザインの指定 */
+    font-size: 40px;
+    color: #979797;
+}
+main > a > div{
+    /* インスタアイコンとtiktokアイコンの大きさと配置の指定 */
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    right: 3vw;
+}
+main > a > .instagram{
+    /* インスタグラムアイコンの配置指定 */
+    top:0;
+    /* 背景設定 */
+    background-image: url(./instagram.jpeg);
+    background-size: cover;
+    background-position: center center;
+}
+main > a > .tiktok{
+    /* tiktokアイコンの配置指定 */
+    top:60px;
+    /* 背景設定 */
+    background-image: url(./tiktok.png);
+    background-size: cover;
+    background-position: center center;
+    background-color: black;
+}
+.main-img{
+    /* 背景画像の大きさ指定 */
+    height: 600px;
+    /* 背景画像の指定 */
+    background-image: url(./download.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.nail-menu > h2,.nail-map > h2{
+    /* 見出しのデザインと余白の設定 */
+    margin-top: 80px;
+    font-size: 28px;
+    text-align: center;
+}
+.nail-menu > div{
+    /* メニュー画像と説明を横に並べる */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.nail-menu > div > .description{
+    margin-top: 50px;
+    width: 600px;
+    height: 700px;
+    border: solid 1px black;
+    background-color: rgb(255, 248, 255);
+}
+.nail-menu > div > .description td{
+    border: solid 1px black;
+    padding: 10px;
+}
+.nail-menu > div > .description table{
+    margin: 50px auto 0 auto;
+}
+.nail-menu >div> .menu{
+    /* 要素の大きさ設定 */
+    height: 700px;
+    width: 600px;
+    /* 配置の設定 */
+    margin-top: 50px;
+    /* 背景設定 */
+    background-image: url(./nail_menu.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(255, 248, 255);
+    /* ボーダーをつける */
+    border: solid black 1px;
+}
+.nail-map > .map{
+    display: block;
+    height: 450px;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+
+}
+.nail-map > p {
+    font-size: 18px;
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    .nail-menu > div{
+        /* メニュー画像と説明を横に並べる */
+        display: block;
+    }
+    .nail-menu > div > .menu,.nail-menu > div > .description{
+        margin: 50px auto 0 auto;
+    }
+    .nail-map > .map{
+        width: 700px;
+    }
+}
+@media (max-width: 830px) {
+    .icon{
+        /* アイコンをナビゲーションの上に配置するためにpositionとtransformを初期値に戻す */
+        position: static;
+        transform: translate(0,0);
+        /* アイコンを中央に配置 */
+        text-align: center;
+        /* アイコンの高さと幅の設定 */
+        width: 100vw;
+        height: 45px;
+    }
+    nav{
+        /* ナビゲーションの高さを調整（減らす） */
+        height: 35px;
+        /* ナビゲーションのパディングを０にする */
+        padding: 0;
+    }
+    main{
+        /* firstview画像の両横の余白をなくす */
+        padding: 0;
+    }
+    main > a > .instagram{
+        /* インスタグラムのアイコンを少し下に下げる */
+        top:30px;
+    }
+    main > a > .tiktok{
+        /* tiktokのアイコンを少し下に下げる */
+        top:90px;
+    }
+    .nail-map > .map{
+        width: 80%;
+        height: 280px;
+    }
+}
+@media (max-width: 670px) {
+    .icon{
+        /* アイコンを少し小さく*/
+        font-size: 24px;
+    }
+    header{
+        /* ヘッダーを浮かせて透けさせる */
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.549);
+        width: 100vw;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+    main > span{
+        /* 縦文字デザインのフォントサイズを下げる */
+        font-size: 28px;
+    }
+    .main-img{
+        /* firstview画像の高さを少し小さく */
+        height: 500px;
+    }
+    main > a > .instagram{
+        /* インスタグラムのアイコンを少し下に下げる */
+        top: 100px;
+        width: 35px;
+        height: 35px;
+    }
+    main > a > .tiktok{
+        /* tiktokのアイコンを少し下に下げる */
+        top:145px;
+        width: 35px;
+        height: 35px;
+    }
+    .nail-menu > div > .menu,.nail-menu > div > .description{
+        width: 400px;
+        height: 500px;
+    }
+}
+@media (max-width: 540px) {
+    .main-img{
+        /* firstview画像の高さを少し小さく */
+        height: 300px;
+    }
+    main > span{
+        /* 縦文字デザインのフォントサイズを下げる */
+        font-size: 20px;
+    }
+}
+@media (max-width: 420px) {
+    .nail-menu > div > .menu,.nail-menu > div > .description{
+        width: 360px;
+        height: 500px;
+    }
+}
+@media (max-width: 380px) {
+    .nail-menu > div > .menu,.nail-menu > div > .description{
+        width: 90%;
+        height: 400px;
+    }
+}
