@@ -77,7 +77,23 @@ main > a > .tiktok{
     background-size: cover;
     background-position: center center;
 }
-.nail-menu > h2,.nail-map > h2{
+.nail-content{
+    padding: 0 20px
+
+}
+.nail-container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+[class^="nail-item"]{
+    width: 150px;
+    height: 150px;
+    background-color: grey;
+}
+.nail-menu > h2,.nail-map > h2,.nail-content{
     /* 見出しのデザインと余白の設定 */
     margin-top: 80px;
     font-size: 28px;
@@ -91,6 +107,7 @@ main > a > .tiktok{
 }
 .nail-menu > div > .description{
     margin-top: 50px;
+    padding: 0 10px;
     width: 600px;
     height: 700px;
     border: solid 1px black;
@@ -225,6 +242,10 @@ main > a > .tiktok{
         /* 縦文字デザインのフォントサイズを下げる */
         font-size: 20px;
     }
+    [class^="nail-item"]{
+        width: 110px;
+        height: 110px;
+    }
 }
 @media (max-width: 420px) {
     .nail-menu > div > .menu,.nail-menu > div > .description{
@@ -237,4 +258,28 @@ main > a > .tiktok{
         width: 90%;
         height: 400px;
     }
+}
+.nail-item-1{
+    background-image: url(./download.jpg);
+    background-size: cover;
+}
+.nail-item-2{
+    background-image: url(./download.jpg);
+    background-size: cover;
+}
+.nail-item-3{
+    background-image: url(./download.jpg);
+    background-size: cover;
+}
+.nail-item-4{
+    background-image: url(./download.jpg);
+    background-size: cover;
+}
+.nail-item-5{
+    background-image: url(./download.jpg);
+    background-size: cover;
+}
+.nail-item-6{
+    background-image: url(./download.jpg);
+    background-size: cover;
 }
