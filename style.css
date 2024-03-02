@@ -211,6 +211,7 @@ nav > a{
     .icon{
         /* アイコンを少し小さく*/
         font-size: 24px;
+        padding-top: 6px;
     }
     header{
         /* ヘッダーを浮かせて透けさせる */
