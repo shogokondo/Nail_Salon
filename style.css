@@ -277,24 +277,30 @@ nav > a{
 .nail-item-1{
     background-image: url(./nail_1.jpeg);
     background-size: cover;
+    background-position: center center;
 }
 .nail-item-2{
     background-image: url(./nail_2.jpg);
     background-size: cover;
+    background-position: center center;
 }
 .nail-item-3{
     background-image: url(./nail_3.jpeg);
     background-size: cover;
+    background-position: center center;
 }
 .nail-item-4{
     background-image: url(./nail_4.jpeg);
     background-size: cover;
+    background-position: center center;
 }
 .nail-item-5{
     background-image: url(./nail_5.jpeg);
     background-size: cover;
+    background-position: center center;
 }
 .nail-item-6{
     background-image: url(./nail_6.jpeg);
     background-size: cover;
+    background-position: center center;
 }
