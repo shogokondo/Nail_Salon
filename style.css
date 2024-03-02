@@ -275,26 +275,26 @@ nav > a{
 }
 /* ギャラリーの選択 */
 .nail-item-1{
-    background-image: url(./download.jpg);
+    background-image: url(./nail_1.jpeg);
     background-size: cover;
 }
 .nail-item-2{
-    background-image: url(./download.jpg);
+    background-image: url(./nail_2.jpg);
     background-size: cover;
 }
 .nail-item-3{
-    background-image: url(./download.jpg);
+    background-image: url(./nail_3.jpeg);
     background-size: cover;
 }
 .nail-item-4{
-    background-image: url(./download.jpg);
+    background-image: url(./nail_4.jpeg);
     background-size: cover;
 }
 .nail-item-5{
-    background-image: url(./download.jpg);
+    background-image: url(./nail_5.jpeg);
     background-size: cover;
 }
 .nail-item-6{
-    background-image: url(./download.jpg);
+    background-image: url(./nail_6.jpeg);
     background-size: cover;
 }
