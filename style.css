@@ -1,6 +1,11 @@
 .bar{
     position: relative;
 }
+body{
+    background-image: url(./background_image.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .icon{
     /* アイコンの配置 */
     width: 300px;
@@ -73,7 +78,7 @@ nav > a{
     /* 背景画像の大きさ指定 */
     height: 600px;
     /* 背景画像の指定 */
-    background-image: url(./download.jpg);
+    background-image: url(./firstView/download_1.jpg);
     background-size: cover;
     background-position: center center;
 }
@@ -275,32 +280,32 @@ nav > a{
 }
 /* ギャラリーの選択 */
 .nail-item-1{
-    background-image: url(./nail_1.jpeg);
+    background-image: url(./gallery/nail_1.jpg);
     background-size: cover;
     background-position: center center;
 }
 .nail-item-2{
-    background-image: url(./nail_2.jpg);
+    background-image: url(./gallery/nail_2.jpg);
     background-size: cover;
     background-position: center center;
 }
 .nail-item-3{
-    background-image: url(./nail_3.jpeg);
+    background-image: url(./gallery/nail_3.jpg);
     background-size: cover;
     background-position: center center;
 }
 .nail-item-4{
-    background-image: url(./nail_4.jpeg);
+    background-image: url(./gallery/nail_4.jpg);
     background-size: cover;
     background-position: center center;
 }
 .nail-item-5{
-    background-image: url(./nail_5.jpeg);
+    background-image: url(./gallery/nail_5.jpg);
     background-size: cover;
     background-position: center center;
 }
 .nail-item-6{
-    background-image: url(./nail_6.jpeg);
+    background-image: url(./gallery/nail_6.jpg);
     background-size: cover;
     background-position: center center;
 }
